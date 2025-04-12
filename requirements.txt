@@ -4,4 +4,4 @@ numpy
 onnxruntime
 soxr
 praat-parselmouth
-pyrnnoise
+pyrnnoise==0.2.7
