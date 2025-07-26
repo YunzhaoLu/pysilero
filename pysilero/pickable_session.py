@@ -29,7 +29,7 @@ class PickableSession:
         opts.log_severity_level = 3
 
         assert version in ["v4", "v5"]
-        repo_dir = snapshot_download("models/pengzhendong/silero-vad", local_files_only=True)
+        repo_dir = snapshot_download("pengzhendong/silero-vad", local_files_only=True)
         self.sess = ort.InferenceSession(
             f"{repo_dir}/{version}/silero_vad.onnx",
             sess_options=opts,
